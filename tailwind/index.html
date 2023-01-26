@@ -160,6 +160,18 @@
               </a>
             </div>
 
+            <a href="https://tailwindcss.com/"
+            target="_blank"
+            @click="(isSidebarOpen && currentSidebarTab == 'linksTab') ? isSidebarOpen = false : isSidebarOpen = true; currentSidebarTab = 'linksTab'"
+            class="my-8 mx-4 text-lg font-bold flex items-center space-x-2 text-cyan-600 transition-colors rounded-lg group hover:bg-cyan-600 hover:text-white">
+            <span aria-hidden="true"
+              class="flex p-2 transition-colors rounded-lg group-hover:bg-cyan-700 group-hover:text-white">
+              <span class="material-symbols-outlined">
+                article
+              </span>
+            </span>
+            <span>Documentación</span>
+          </a>
 
           </nav>
 
@@ -558,9 +570,15 @@
                   Preview</p>
                 <div class="border-2 border-stone-800/50 border-dashed rounded-lg px-4 py-9 w-[90%] mx-auto">
                   <div class="flex gap-6 items-center justify-center">
-                    <div class="w-24 h-40 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">01</div>
-                    <div class="w-32 h-24 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">02</div>
-                    <div class="w-64 h-32 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">03</div>
+                    <div
+                      class="w-24 h-40 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      01</div>
+                    <div
+                      class="w-32 h-24 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      02</div>
+                    <div
+                      class="w-64 h-32 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      03</div>
                   </div>
                 </div>
 
@@ -585,9 +603,9 @@
                       <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300
                       hover:shadow-xl cursor-default">
                       <p>&lt;div class="flex gap-6 items-center justify-center"&gt;</p>
-                        <p class="ml-6">&lt;div class="w-24 h-40 ..."&gt;01&lt;/div&gt;</p>
-                        <p class="ml-6">&lt;div class="w-32 h-24 ..."&gt;02&lt;/div&gt;</p>
-                        <p class="ml-6">&lt;div class="w-64 h-32 ..."&gt;03&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="w-24 h-40 ..."&gt;01&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="w-32 h-24 ..."&gt;02&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="w-64 h-32 ..."&gt;03&lt;/div&gt;</p>
                       <p>&lt;/div&gt;</p>
                       </code>
                     </div>
@@ -605,9 +623,15 @@
                 <div
                   class="flex justify-center border-2 border-stone-800/50 border-dashed rounded-lg px-4 py-9 w-[90%] mx-auto">
                   <div class="flex flex-row-reverse gap-6 items-center justify-center">
-                    <div class="w-24 h-24 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">01</div>
-                    <div class="w-24 h-24 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">02</div>
-                    <div class="w-24 h-24 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">03</div>
+                    <div
+                      class="w-24 h-24 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      01</div>
+                    <div
+                      class="w-24 h-24 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      02</div>
+                    <div
+                      class="w-24 h-24 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      03</div>
                   </div>
                 </div>
 
@@ -632,9 +656,9 @@
                       <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300
                       hover:shadow-xl cursor-default">
                       <p>&lt;div class="flex flex-row-reverse gap-6 items-center justify-center"&gt;</p>
-                        <p class="ml-6">&lt;div class="w-24 h-24 ..."&gt;01&lt;/div&gt;</p>
-                        <p class="ml-6">&lt;div class="w-24 h-24 ..."&gt;02&lt;/div&gt;</p>
-                        <p class="ml-6">&lt;div class="w-24 h-24 ..."&gt;03&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="w-24 h-24 ..."&gt;01&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="w-24 h-24 ..."&gt;02&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="w-24 h-24 ..."&gt;03&lt;/div&gt;</p>
                       <p>&lt;/div&gt;</p>
                       </code>
                     </div>
@@ -652,9 +676,15 @@
                 <div
                   class="flex justify-center border-2 border-stone-800/50 border-dashed rounded-lg px-4 py-9 w-[90%] mx-auto">
                   <div class="flex flex-col gap-6 items-center justify-center">
-                    <div class="w-24 h-12 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">01</div>
-                    <div class="w-24 h-12 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">02</div>
-                    <div class="w-24 h-12 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">03</div>
+                    <div
+                      class="w-24 h-12 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      01</div>
+                    <div
+                      class="w-24 h-12 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      02</div>
+                    <div
+                      class="w-24 h-12 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      03</div>
                   </div>
                 </div>
 
@@ -679,9 +709,9 @@
                       <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300
                       hover:shadow-xl cursor-default">
                       <p>&lt;div class="flex flex-col gap-6 items-center justify-center"&gt;</p>
-                        <p class="ml-6">&lt;div class="w-24 h-12 ..."&gt;01&lt;/div&gt;</p>
-                        <p class="ml-6">&lt;div class="w-24 h-12 ..."&gt;02&lt;/div&gt;</p>
-                        <p class="ml-6">&lt;div class="w-24 h-12 ..."&gt;03&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="w-24 h-12 ..."&gt;01&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="w-24 h-12 ..."&gt;02&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="w-24 h-12 ..."&gt;03&lt;/div&gt;</p>
                       <p>&lt;/div&gt;</p>
                       </code>
                     </div>
@@ -699,9 +729,15 @@
                 <div
                   class="flex justify-center border-2 border-stone-800/50 border-dashed rounded-lg px-4 py-9 w-[90%] mx-auto">
                   <div class="flex gap-6 items-center justify-center">
-                    <div class="w-24 h-12 self-start bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">01</div>
-                    <div class="w-24 h-32 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">02</div>
-                    <div class="w-24 h-24 self-end bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">03</div>
+                    <div
+                      class="w-24 h-12 self-start bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      01</div>
+                    <div
+                      class="w-24 h-32 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      02</div>
+                    <div
+                      class="w-24 h-24 self-end bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      03</div>
                   </div>
                 </div>
 
@@ -726,9 +762,9 @@
                       <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300
                       hover:shadow-xl cursor-default">
                       <p>&lt;div class="flex gap-6 items-center justify-center"&gt;</p>
-                        <p class="ml-6">&lt;div class="w-24 h-12 self-start ..."&gt;01&lt;/div&gt;</p>
-                        <p class="ml-6">&lt;div class="w-24 h-32 ..."&gt;02&lt;/div&gt;</p>
-                        <p class="ml-6">&lt;div class="w-24 h-24 self-end ..."&gt;03&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="w-24 h-12 self-start ..."&gt;01&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="w-24 h-32 ..."&gt;02&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="w-24 h-24 self-end ..."&gt;03&lt;/div&gt;</p>
                       <p>&lt;/div&gt;</p>
                       </code>
                     </div>
@@ -737,7 +773,7 @@
 
               </div>
 
-              
+
             </div>
           </section>
 
@@ -757,10 +793,18 @@
                   Preview</p>
                 <div class="border-2 border-stone-800/50 border-dashed rounded-lg px-4 py-9 w-[90%] mx-auto">
                   <div class="grid grid-cols-2 gap-6">
-                    <div class=" h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">01</div>
-                    <div class=" h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">02</div>
-                    <div class=" h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">03</div>
-                    <div class=" h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">04</div>
+                    <div
+                      class=" h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      01</div>
+                    <div
+                      class=" h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      02</div>
+                    <div
+                      class=" h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      03</div>
+                    <div
+                      class=" h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      04</div>
                   </div>
                 </div>
 
@@ -785,10 +829,10 @@
                       <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300
                       hover:shadow-xl cursor-default">
                       <p>&lt;div class="grid grid-cols-2 gap-6"&gt;</p>
-                        <p class="ml-6">&lt;div class=" ..."&gt;01&lt;/div&gt;</p>
-                        <p class="ml-6">&lt;div class=" ..."&gt;02&lt;/div&gt;</p>
-                        <p class="ml-6">&lt;div class=" ..."&gt;03&lt;/div&gt;</p>
-                        <p class="ml-6">&lt;div class=" ..."&gt;04&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class=" ..."&gt;01&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class=" ..."&gt;02&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class=" ..."&gt;03&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class=" ..."&gt;04&lt;/div&gt;</p>
                       <p>&lt;/div&gt;</p>
                       </code>
                     </div>
@@ -799,158 +843,184 @@
               </div>
 
               <div
-              class="bg-white shadow rounded-xl px-5 py-10 transition-all ease-in-out duration-300 hover:shadow-xl cursor-default">
-              <h2 class="text-4xl my-4">Col Span</h2>
-              <p
-                class="max-w-max	px-2 relative text-lg bg-white -bottom-3 left-5 border-2 border-stone-800/50 rounded-lg">
-                Preview</p>
-              <div class="border-2 border-stone-800/50 border-dashed rounded-lg px-4 py-9 w-[90%] mx-auto">
-                <div class="grid grid-cols-2 gap-6">
-                  <div class="col-span-2 h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">01</div>
-                  <div class="h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">02</div>
-                  <div class="h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">03</div>
-                </div>
-              </div>
-
-              <div class="mt-5">
-                <div class="w-[90%] my-0 mx-auto bg-[#011522] rounded-lg">
-                  <div class="flex items-center p-2">
-                    <div class="py-0 px-[4px]">
-                      <span
-                        class="bg-[#ff605c] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
-                    </div>
-                    <div class="py-0 px-[4px]">
-                      <span
-                        class="bg-[#ffbd44] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
-                    </div>
-                    <div class="py-0 px-[4px]">
-                      <span
-                        class="bg-[#00ca4e] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
-                    </div>
+                class="bg-white shadow rounded-xl px-5 py-10 transition-all ease-in-out duration-300 hover:shadow-xl cursor-default">
+                <h2 class="text-4xl my-4">Col Span</h2>
+                <p
+                  class="max-w-max	px-2 relative text-lg bg-white -bottom-3 left-5 border-2 border-stone-800/50 rounded-lg">
+                  Preview</p>
+                <div class="border-2 border-stone-800/50 border-dashed rounded-lg px-4 py-9 w-[90%] mx-auto">
+                  <div class="grid grid-cols-2 gap-6">
+                    <div
+                      class="col-span-2 h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      01</div>
+                    <div
+                      class="h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      02</div>
+                    <div
+                      class="h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      03</div>
                   </div>
-                  <div
-                    class="flex items-center transition-all ease-in-out duration-300 hover:shadow-xl cursor-default"">
-                    <code class="ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300
-                    hover:shadow-xl cursor-default">
-                    <p>&lt;div class="grid grid-cols-2 gap-6"&gt;</p>
+                </div>
+
+                <div class="mt-5">
+                  <div class="w-[90%] my-0 mx-auto bg-[#011522] rounded-lg">
+                    <div class="flex items-center p-2">
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#ff605c] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#ffbd44] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#00ca4e] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center transition-all ease-in-out duration-300 hover:shadow-xl cursor-default"">
+                    <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300 hover:shadow-xl
+                      cursor-default">
+                      <p>&lt;div class="grid grid-cols-2 gap-6"&gt;</p>
                       <p class="ml-6">&lt;div class=" ..."&gt;01&lt;/div&gt;</p>
                       <p class="ml-6">&lt;div class=" ..."&gt;02&lt;/div&gt;</p>
                       <p class="ml-6">&lt;div class=" ..."&gt;03&lt;/div&gt;</p>
-                    <p>&lt;/div&gt;</p>
-                    </code>
+                      <p>&lt;/div&gt;</p>
+                      </code>
+                    </div>
                   </div>
                 </div>
+
+
               </div>
 
 
-            </div>
-
-
-            <div
-            class="bg-white shadow rounded-xl px-5 py-10 transition-all ease-in-out duration-300 hover:shadow-xl cursor-default">
-            <h2 class="text-4xl my-4">Row span</h2>
-            <p
-              class="max-w-max	px-2 relative text-lg bg-white -bottom-3 left-5 border-2 border-stone-800/50 rounded-lg">
-              Preview</p>
-            <div class="border-2 border-stone-800/50 border-dashed rounded-lg px-4 py-9 w-[90%] mx-auto">
-              <div class="grid grid-cols-2 gap-6">
-                <div class="row-span-2 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">01</div>
-                <div class=" h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">02</div>
-                <div class=" h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">03</div>
-              </div>
-            </div>
-
-            <div class="mt-5">
-              <div class="w-[90%] my-0 mx-auto bg-[#011522] rounded-lg">
-                <div class="flex items-center p-2">
-                  <div class="py-0 px-[4px]">
-                    <span
-                      class="bg-[#ff605c] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
-                  </div>
-                  <div class="py-0 px-[4px]">
-                    <span
-                      class="bg-[#ffbd44] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
-                  </div>
-                  <div class="py-0 px-[4px]">
-                    <span
-                      class="bg-[#00ca4e] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
-                  </div>
-                </div>
-                <div
-                  class="flex items-center transition-all ease-in-out duration-300 hover:shadow-xl cursor-default"">
-                  <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300
-                  hover:shadow-xl cursor-default">
-                  <p>&lt;div class="grid grid-cols-2 gap-6"&gt;</p>
-                    <p class="ml-6">&lt;div class="row-span-2 ..."&gt;01&lt;/div&gt;</p>
-                    <p class="ml-6">&lt;div class=" ..."&gt;02&lt;/div&gt;</p>
-                    <p class="ml-6">&lt;div class=" ..."&gt;03&lt;/div&gt;</p>
-                  <p>&lt;/div&gt;</p>
-                  </code>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-
-          <div
-          class="bg-white shadow rounded-xl px-5 py-10 transition-all ease-in-out duration-300 hover:shadow-xl cursor-default">
-          <h2 class="text-4xl my-4">Estructura básica grid</h2>
-          <p
-            class="max-w-max	px-2 relative text-lg bg-white -bottom-3 left-5 border-2 border-stone-800/50 rounded-lg">
-            Preview</p>
-          <div class="border-2 border-stone-800/50 border-dashed rounded-lg px-4 py-9 w-[90%] mx-auto">
-            <div class="grid grid-cols-3 gap-6">
-              <div class="h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">01</div>
-              <div class="h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">02</div>
-              <div class="h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">03</div>
-              <div class="h-16 col-span-2 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">04</div>
-              <div class="h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">05</div>
-              <div class="h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">06</div>
-              <div class="h-16 col-span-2 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">07</div>
-            </div>
-          </div>
-
-          <div class="mt-5">
-            <div class="w-[90%] my-0 mx-auto bg-[#011522] rounded-lg">
-              <div class="flex items-center p-2">
-                <div class="py-0 px-[4px]">
-                  <span
-                    class="bg-[#ff605c] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
-                </div>
-                <div class="py-0 px-[4px]">
-                  <span
-                    class="bg-[#ffbd44] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
-                </div>
-                <div class="py-0 px-[4px]">
-                  <span
-                    class="bg-[#00ca4e] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
-                </div>
-              </div>
               <div
-                class="flex items-center transition-all ease-in-out duration-300 hover:shadow-xl cursor-default"">
-                <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300
-                hover:shadow-xl cursor-default">
-                <p>&lt;div class="grid grid-cols-2 gap-6"&gt;</p>
-                  <p class="ml-6">&lt;div class="h-16 ..."&gt;01&lt;/div&gt;</p>
-                  <p class="ml-6">&lt;div class="h-16 ..."&gt;02&lt;/div&gt;</p>
-                  <p class="ml-6">&lt;div class="h-16 ..."&gt;03&lt;/div&gt;</p>
-                  <p class="ml-6">&lt;div class="h-16 col-span-2 ..."&gt;04&lt;/div&gt;</p>
-                  <p class="ml-6">&lt;div class="h-16 ..."&gt;05&lt;/div&gt;</p>
-                  <p class="ml-6">&lt;div class="h-16 ..."&gt;06&lt;/div&gt;</p>
-                  <p class="ml-6">&lt;div class="h-16 col-span-2 ..."&gt;07&lt;/div&gt;</p>
-                <p>&lt;/div&gt;</p>
-                </code>
+                class="bg-white shadow rounded-xl px-5 py-10 transition-all ease-in-out duration-300 hover:shadow-xl cursor-default">
+                <h2 class="text-4xl my-4">Row span</h2>
+                <p
+                  class="max-w-max	px-2 relative text-lg bg-white -bottom-3 left-5 border-2 border-stone-800/50 rounded-lg">
+                  Preview</p>
+                <div class="border-2 border-stone-800/50 border-dashed rounded-lg px-4 py-9 w-[90%] mx-auto">
+                  <div class="grid grid-cols-2 gap-6">
+                    <div
+                      class="row-span-2 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      01</div>
+                    <div
+                      class=" h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      02</div>
+                    <div
+                      class=" h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      03</div>
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <div class="w-[90%] my-0 mx-auto bg-[#011522] rounded-lg">
+                    <div class="flex items-center p-2">
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#ff605c] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#ffbd44] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#00ca4e] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center transition-all ease-in-out duration-300 hover:shadow-xl cursor-default"">
+                  <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300 hover:shadow-xl
+                      cursor-default">
+                      <p>&lt;div class="grid grid-cols-2 gap-6"&gt;</p>
+                      <p class="ml-6">&lt;div class="row-span-2 ..."&gt;01&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class=" ..."&gt;02&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class=" ..."&gt;03&lt;/div&gt;</p>
+                      <p>&lt;/div&gt;</p>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
+
+              <div
+                class="bg-white shadow rounded-xl px-5 py-10 transition-all ease-in-out duration-300 hover:shadow-xl cursor-default">
+                <h2 class="text-4xl my-4">Estructura básica grid</h2>
+                <p
+                  class="max-w-max	px-2 relative text-lg bg-white -bottom-3 left-5 border-2 border-stone-800/50 rounded-lg">
+                  Preview</p>
+                <div class="border-2 border-stone-800/50 border-dashed rounded-lg px-4 py-9 w-[90%] mx-auto">
+                  <div class="grid grid-cols-3 gap-6">
+                    <div
+                      class="h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      01</div>
+                    <div
+                      class="h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      02</div>
+                    <div
+                      class="h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      03</div>
+                    <div
+                      class="h-16 col-span-2 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      04</div>
+                    <div
+                      class="h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      05</div>
+                    <div
+                      class="h-16 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      06</div>
+                    <div
+                      class="h-16 col-span-2 bg-cyan-700 rounded-lg text-white flex justify-center items-center text-3xl font-bold font-mono">
+                      07</div>
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <div class="w-[90%] my-0 mx-auto bg-[#011522] rounded-lg">
+                    <div class="flex items-center p-2">
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#ff605c] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#ffbd44] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#00ca4e] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center transition-all ease-in-out duration-300 hover:shadow-xl cursor-default"">
+                <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300 hover:shadow-xl
+                      cursor-default">
+                      <p>&lt;div class="grid grid-cols-2 gap-6"&gt;</p>
+                      <p class="ml-6">&lt;div class="h-16 ..."&gt;01&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="h-16 ..."&gt;02&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="h-16 ..."&gt;03&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="h-16 col-span-2 ..."&gt;04&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="h-16 ..."&gt;05&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="h-16 ..."&gt;06&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;div class="h-16 col-span-2 ..."&gt;07&lt;/div&gt;</p>
+                      <p>&lt;/div&gt;</p>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
             </div>
-          </div>
 
 
-        </div>
-
-              </div>
-
-            
           </section>
 
           <section class="mx-8 my-24" id="more">
@@ -1001,13 +1071,50 @@
                       class="flex items-center transition-all ease-in-out duration-300 hover:shadow-xl cursor-default"">
                       <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300
                       hover:shadow-xl cursor-default">
-                      <p>&lt;div class="shrink-0"&gt;</p>
-                        <p class="ml-6">&lt;img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo"&gt;&lt;/img&gt;</p>
+                      <p>&lt;div&gt;</p>
+                      <p class="ml-6">&lt;img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo"&gt;&lt;/img&gt;
+                      </p>
                       <p>&lt;/div&gt;</p>
                       <p>&lt;div&gt;</p>
-                      <p class="ml-6">&lt;div class="text-xl font-medium text-black"&gt;ChitChat&lt;/div&gt;</p>
+                      <p class="ml-6">&lt;span class="text-xl font-medium text-black"&gt;ChitChat&lt;/span&gt;</p>
                       <p class="ml-6">&lt;p class="text-slate-500"&gt;...&lt;/p&gt;</p>
                       <p>&lt;/div&gt;</p>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+
+                <h2 class="text-2xl my-4 mx-8">Con CSS aparte</h2>
+
+                <div class="mt-5">
+                  <div class="w-[90%] my-0 mx-auto bg-[#011522] rounded-lg">
+                    <div class="flex items-center p-2">
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#ff605c] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#ffbd44] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#00ca4e] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center transition-all ease-in-out duration-300 hover:shadow-xl cursor-default"">
+                      <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300
+                      hover:shadow-xl cursor-default">
+                      <p>img {</p>
+                      <p class="ml-6">@apply h-12 w-12;</p>
+                      <p>}</p>
+                      <p>span {</p>
+                      <p class="ml-6">@apply text-xl font-medium text-black;</p>
+                      <p>}</p>
+                      <p>p {</p>
+                      <p class="ml-6">@apply text-slate-500;</p>
+                      <p>}</p>
                       </code>
                     </div>
                   </div>
@@ -1017,73 +1124,166 @@
               </div>
 
               <div
-              class="bg-white shadow rounded-xl px-5 py-10 transition-all ease-in-out duration-300 hover:shadow-xl cursor-default">
-              <h2 class="text-4xl my-4">Tarjeta responsive</h2>
-              <p
-                class="max-w-max	px-2 relative text-lg bg-white -bottom-3 left-5 border-2 border-stone-800/50 rounded-lg">
-                Preview</p>
-              <div class="border-2 border-stone-800/50 border-dashed rounded-lg px-4 py-9 w-[90%] mx-auto">
-                <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 items-center sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
-                  <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="./img/card.webp" alt="man">
-                  <div class="text-center space-y-2 sm:text-left">
-                    <div class="space-y-0.5">
-                      <p class="text-lg text-black font-semibold">
-                        Erin Lindford
-                      </p>
-                      <p class="text-slate-500 font-medium">
-                        Product Engineer
-                      </p>
-                    </div>
-                    <button class="px-4 py-1 text-sm text-cyan-600 font-semibold rounded-full border border-cyan-200 hover:text-white hover:bg-cyan-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2">Message</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mt-5">
-                <div class="w-[90%] my-0 mx-auto bg-[#011522] rounded-lg">
-                  <div class="flex items-center p-2">
-                    <div class="py-0 px-[4px]">
-                      <span
-                        class="bg-[#ff605c] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
-                    </div>
-                    <div class="py-0 px-[4px]">
-                      <span
-                        class="bg-[#ffbd44] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
-                    </div>
-                    <div class="py-0 px-[4px]">
-                      <span
-                        class="bg-[#00ca4e] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
-                    </div>
-                  </div>
+                class="bg-white shadow rounded-xl px-5 py-10 transition-all ease-in-out duration-300 hover:shadow-xl cursor-default">
+                <h2 class="text-4xl my-4">Tarjeta responsive</h2>
+                <p
+                  class="max-w-max	px-2 relative text-lg bg-white -bottom-3 left-5 border-2 border-stone-800/50 rounded-lg">
+                  Preview</p>
+                <div class="border-2 border-stone-800/50 border-dashed rounded-lg px-4 py-9 w-[90%] mx-auto">
                   <div
-                    class="flex items-center transition-all ease-in-out duration-300 hover:shadow-xl cursor-default"">
-                    <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300
-                    hover:shadow-xl cursor-default">
-                    <p>&lt;div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 items-center sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"&gt;</p>
-                      <p class="ml-6">&lt;img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="/img/image.svg" alt="man"&gt;&lt;/img&gt;</p>
-                    <p class="ml-6">&lt;div class="text-center space-y-2 sm:text-left"&gt;</p>
-                    <p class="ml-12">&lt;div class="space-y-0.5"&gt;</p>
-                    <p class="ml-24">&lt;p class="text-lg text-black font-semibold"&gt;Erin Lindford&lt;/p&gt;</p>
-                    <p class="ml-24">&lt;p class="text-slate-500 font-medium"&gt;Product Engineer&lt;/p&gt;</p>
-                    <p class="ml-12">&lt;/div&gt;</p>
-                    <p class="ml-12">&lt;button class="px-4 py-1 text-sm text-cyan-600 font-semibold rounded-full border border-cyan-200 hover:text-white hover:bg-cyan-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2"&gt;Message&lt;/button&gt;</p>
-                    <p class="ml-6">&lt;/div&gt;</p>
-                    <p>&lt;/div&gt;</p>
-
-                    </code>
+                    class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 items-center sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+                    <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="./img/card.webp" alt="man">
+                    <div class="text-center space-y-2 sm:text-left">
+                      <div class="space-y-0.5">
+                        <p class="text-lg text-black font-semibold">
+                          Erin Lindford
+                        </p>
+                        <p class="text-slate-500 font-medium">
+                          Product Engineer
+                        </p>
+                      </div>
+                      <button
+                        class="px-4 py-1 text-sm text-cyan-600 font-semibold rounded-full border border-cyan-200 hover:text-white hover:bg-cyan-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2">Message</button>
+                    </div>
                   </div>
                 </div>
-              </div>
 
+                <div class="mt-5">
+                  <div class="w-[90%] my-0 mx-auto bg-[#011522] rounded-lg">
+                    <div class="flex items-center p-2">
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#ff605c] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#ffbd44] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#00ca4e] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center transition-all ease-in-out duration-300 hover:shadow-xl cursor-default"">
+                    <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300 hover:shadow-xl
+                      cursor-default">
+                      <p>&lt;div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 items-center
+                        sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"&gt;</p>
+                      <p class="ml-6">&lt;img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0"
+                        src="/img/image.svg" alt="man"&gt;&lt;/img&gt;</p>
+                      <p class="ml-6">&lt;div class="text-center space-y-2 sm:text-left"&gt;</p>
+                      <p class="ml-12">&lt;div class="space-y-0.5"&gt;</p>
+                      <p class="ml-24">&lt;p class="text-lg text-black font-semibold"&gt;Erin Lindford&lt;/p&gt;</p>
+                      <p class="ml-24">&lt;p class="text-slate-500 font-medium"&gt;Product Engineer&lt;/p&gt;</p>
+                      <p class="ml-12">&lt;/div&gt;</p>
+                      <p class="ml-12">&lt;button class="px-4 py-1 text-sm text-cyan-600 font-semibold rounded-full
+                        border border-cyan-200 hover:text-white hover:bg-cyan-600 hover:border-transparent
+                        focus:outline-none focus:ring-2 focus:ring-cyan-600
+                        focus:ring-offset-2"&gt;Message&lt;/button&gt;</p>
+                      <p class="ml-6">&lt;/div&gt;</p>
+                      <p>&lt;/div&gt;</p>
 
+                      </code>
+                    </div>
+                  </div>
                 </div>
+
+                <h2 class="text-2xl my-4 mx-8">Con CSS aparte</h2>
+
+                <div class="mt-5">
+                  <div class="w-[90%] my-0 mx-auto bg-[#011522] rounded-lg">
+                    <div class="flex items-center p-2">
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#ff605c] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#ffbd44] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#00ca4e] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center transition-all ease-in-out duration-300 hover:shadow-xl cursor-default"">
+                    <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300 hover:shadow-xl
+                      cursor-default">
+                      <p>&lt;div class="container"&gt;</p>
+                      <p class="ml-6">&lt;img src="/img/image.svg" alt="man"&gt;&lt;/img&gt;</p>
+                      <p class="ml-6">&lt;div class="subcotainer"&gt;</p>
+                      <p class="ml-12">&lt;div class="texts"&gt;</p>
+                      <p class="ml-24">&lt;p class="title"&gt;Erin Lindford&lt;/p&gt;</p>
+                      <p class="ml-24">&lt;p class="subtitle"&gt;Product Engineer&lt;/p&gt;</p>
+                      <p class="ml-12">&lt;/div&gt;</p>
+                      <p class="ml-12">&lt;button&gt;Message&lt;/button&gt;</p>
+                      <p class="ml-6">&lt;/div&gt;</p>
+                      <p>&lt;/div&gt;</p>
+
+                      </code>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="mt-5">
+                  <div class="w-[90%] my-0 mx-auto bg-[#011522] rounded-lg">
+                    <div class="flex items-center p-2">
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#ff605c] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#ffbd44] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                      <div class="py-0 px-[4px]">
+                        <span
+                          class="bg-[#00ca4e] inline-block rounded-[50%] w-[15px] h-[15px] p-[1px] items-center"></span>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center transition-all ease-in-out duration-300 hover:shadow-xl cursor-default"">
+                      <code class=" ml-6 py-3 text-white text-xl transition-all ease-in-out duration-300
+                      hover:shadow-xl cursor-default">
+                      <p>.container {</p>
+                      <p class="ml-6">@apply py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2
+                        items-center sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6;</p>
+                      <p>}</p>
+                      <p>img {</p>
+                      <p class="ml-6">@apply block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0;</p>
+                      <p>}</p>
+                      <p>.subcontainer {</p>
+                      <p class="ml-6">@apply text-center space-y-2 sm:text-left;</p>
+                      <p>}</p>
+                      <p>.texts {</p>
+                      <p class="ml-6">@apply space-y-0.5;</p>
+                      <p>}</p>
+                      <p>.title {</p>
+                      <p class="ml-6">@apply text-lg text-black font-semibold;</p>
+                      <p>}</p>
+                      <p>.subtitle {</p>
+                      <p class="ml-6">@apply text-slate-500 font-medium;</p>
+                      <p>}</p>
+                      <p>button {</p>
+                      <p class="ml-6">@apply px-4 py-1 text-sm text-cyan-600 font-semibold rounded-full border border-cyan-200 hover:text-white hover:bg-cyan-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2;</p>
+                      <p>}</p>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
             </div>
-          </section>
-          
-        </main>
       </div>
+      </section>
+
+      </main>
     </div>
+  </div>
 
 
 
