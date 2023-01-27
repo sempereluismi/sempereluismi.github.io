@@ -9,4 +9,4 @@
 
 ## Web Navidad
 
-- [v1.0](https://sempereluismi.github.io/navidad/)
+- [Navidad](https://sempereluismi.github.io/navidad/)
