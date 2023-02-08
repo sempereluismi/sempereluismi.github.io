@@ -7,6 +7,8 @@
 
 - [v1.0](https://sempereluismi.github.io/pelicula/v1.0/)
 - [v2.1](https://sempereluismi.github.io/pelicula/v2.1/)
+- [v2.2](https://sempereluismi.github.io/pelicula/v2.2/)
+
 
 ## Web Navidad
 
